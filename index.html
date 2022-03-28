@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="box">
       <h2 class="heading">Add colleagues</h2>
       <input type="text" class="email" placeholder="Enter name, email or tag" />
       <div class="buttonbox">
@@ -16,14 +30,18 @@
         <button class="add">Add</button>
       </div>
     </div>
-    <select class="options">
-      <option selected disabled hidden>In a call</option>
-      <option>Available</option>
-      <option>Busy</option>
-      <option>Appear away</option>
-      <option>Appear offline</option>
-      <option>Duration</option>
-      <option>Reset status</option>
-    </select>
+    <div class="dropdown">
+      <button type="button" class="options btn btn-basic dropdown-toggle" data-toggle="dropdown">In a call</button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#"><div class="greendot"></div>Available</a>
+        <a class="dropdown-item" href="#"><div class="reddot"></div>Busy</a>
+        <a class="dropdown-item" href="#"><div class="orangedot"></div>Appear away</a>
+        <a class="dropdown-item" href="#"><div class="graydot"></div>Appear offline</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Duration</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Reset status</a>
+      </div>
+    </div>
   </body>
 </html>
